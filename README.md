@@ -16,7 +16,7 @@ Direct integrating KISTI database into GIS software using OGC’s WFS standard
 
 ## Installation
 * Copy files to your target directory, i.e., /WWW_ROOT/wfs/.
-* In a web browser, type the following request in the address bar and you should see an we
+* In a web browser, type the following request in the address bar and you should see the returned XML document.
 
 ## Using the library in QGIS
 * Install QGIS WFS 2.0 Client and set the default URL as shown below
