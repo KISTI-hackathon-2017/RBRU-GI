@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WFS_Capabilities 
+	xmlns="http://www.opengis.net/wfs/2.0" 
+	xmlns:gml="http://www.opengis.net/gml/3.2" 
+	xmlns:fes="http://www.opengis.net/fes/2.0" 
+	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xmlns:ows="http://www.opengis.net/ows/1.1" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0.2" 
+	xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd http://www.opengis.net/ows/1.1 http://schemas.opengis.net/ows/1.1.0/owsAll.xsd">
+<ows:ServiceIdentification>
+	<ows:Title>RBRU-GI</ows:Title>
+	<ows:Abstract>RBRU-GI</ows:Abstract>
+	<ows:Keywords>
+		<ows:Keyword>Air temperature</ows:Keyword>
+		<ows:Keyword>Air relative humidity</ows:Keyword>
+		<ows:Keyword>CO2</ows:Keyword>
+	</ows:Keywords>
+	<ows:ServiceType codeSpace="OGC">OGC WFS</ows:ServiceType>
+	<ows:ServiceTypeVersion>1.1.0</ows:ServiceTypeVersion>
+	<ows:Fees>NONE</ows:Fees>
+	<ows:AccessConstraints>NONE</ows:AccessConstraints>
+</ows:ServiceIdentification>
+<ows:ServiceProvider>
+	<ows:ProviderName>RBRU-GI</ows:ProviderName>
+	<ows:ProviderSite xlink:type="simple" xlink:href="http://org.rbru.ac.th/~gi"/>
+	<ows:ServiceContact>
+		<ows:IndividualName>RBRU-GI</ows:IndividualName>
+		<ows:PositionName>User Services</ows:PositionName>
+		<ows:ContactInfo>
+			<ows:Phone>
+				<ows:Voice>+66 39-xxx-xxxx</ows:Voice>
+				<ows:Facsimile>+66 39-xxx-xxxx</ows:Facsimile>
+			</ows:Phone>
+			<ows:Address>
+				<ows:DeliveryPoint>Thachang</ows:DeliveryPoint>
+				<ows:City>Chanthaburi</ows:City>
+				<ows:AdministrativeArea>Chanthaburi</ows:AdministrativeArea>
+				<ows:PostalCode>22000</ows:PostalCode>
+				<ows:Country>THA</ows:Country>
+				<ows:ElectronicMailAddress>kumpee.t@rbru.ac.th</ows:ElectronicMailAddress>
+			</ows:Address>
+			<ows:OnlineResource xlink:type="simple" xlink:href="http://127.0.0.1/wfs/"/>
+			<ows:HoursOfService>N/A</ows:HoursOfService>
+			<ows:ContactInstructions>NONE</ows:ContactInstructions>
+		</ows:ContactInfo>
+		<ows:Role>resourceProvider</ows:Role>
+	</ows:ServiceContact>
+</ows:ServiceProvider>
+<ows:OperationsMetadata>
+	<ows:Operation name="GetCapabilities">
+		<ows:DCP>
+			<ows:HTTP>
+				<ows:Get xlink:href="http://127.0.0.1/wfs/?"/>
+			</ows:HTTP>
+		</ows:DCP>
+		<ows:Parameter name="AcceptVersions">
+			<ows:AllowedValues>
+				<ows:Value>2.0.0</ows:Value>
+				<ows:Value>1.1.0</ows:Value>
+			</ows:AllowedValues>
+		</ows:Parameter>
+	</ows:Operation>
+	<ows:Operation name="GetFeature">
+		<ows:DCP>
+			<ows:HTTP>
+				<ows:Get xlink:href="http://127.0.0.1/wfs/?"/>
+			</ows:HTTP>
+		</ows:DCP>
+	</ows:Operation>
+	<ows:Operation name="DescribeStoredQueries">
+		<ows:DCP>
+			<ows:HTTP>
+				<ows:Get xlink:href="http://127.0.0.1/wfs/?"/>
+			</ows:HTTP>
+		</ows:DCP>
+	</ows:Operation>
+	<ows:Parameter name="version">
+		<ows:AllowedValues>
+			<ows:Value>2.0.0</ows:Value>
+			<ows:Value>1.1.0</ows:Value>
+		</ows:AllowedValues>
+	</ows:Parameter>
+</ows:OperationsMetadata>
+<FeatureTypeList>
+__FEATURE_TYPE_LIST__
+</FeatureTypeList>
+</WFS_Capabilities>
