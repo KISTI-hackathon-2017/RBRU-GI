@@ -11,4 +11,5 @@ Direct integrating KISTI database into GIS software using OGC’s WFS standard
 ## Tools and data:
 * KISTI’s dataset
 * PHP, JavaScript
-* GIS software, i.e., QuantumGIS (https://www.google.com)
+* GIS software, i.e., QGIS (http://www.qgis.org)
+* QGIS WFS20 Client (https://plugins.qgis.org/plugins/wfsclient/)
