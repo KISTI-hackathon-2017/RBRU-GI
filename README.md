@@ -30,3 +30,7 @@ Direct integrating KISTI database into GIS software using OGC’s WFS standard
 ## Example application 2 : Analyzing taxi movement states
 Analyzing texi's speeds and timestamps to find the locations where a taxi was stopped. The following figure illustrates the locations (red dots) where the taxi *IK1033* stopped for more that *120* seconds. The yellow lables presented the time durations (seconds) before the taxi started moving again.
 ![alt text](https://github.com/KISTI-hackathon-2017/RBRU-GI/blob/master/images/qgis_state_IK1033_with_osm.png "IK1033 states")
+
+# Thank you sponsors
+* We would like to thank everyone from **KISTI** for thier supports during this workshop in Korea
+* We, also, would like to thank **the President of RBRU** and the **ex-dean of CSIT** for thier additional supports
